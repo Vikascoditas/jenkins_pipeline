@@ -4,18 +4,18 @@ pipeline{
     stage("build"){
       steps{ 
           
-             echo 'building the application...'
+             echo "building the application... at %date% : %time% "
           echo "helooo" }
         }
        stage("test"){
         steps{
             
-            echo "testing"
+            echo "testing  %date% : %time% "
           }
        }
      stage("deploy"){
      steps{
-      echo "deploying"
+      echo "deploying %date% : %time% "
         }
        }
      }
