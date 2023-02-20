@@ -19,8 +19,7 @@ pipeline{
         }
        }
      }
-}
-    post {
+  post {
         always {
             echo "this will always run"
         }
@@ -38,3 +37,6 @@ pipeline{
             echo "this will run only if pipeline has chanegd"
         }
     }
+
+}
+    
